@@ -7,7 +7,7 @@ import seaborn as sns
 st.title('Dashboard Peminjaman Sepeda')
  
 # Membaca data
-@st.cache
+@st.cache_data
 def load_data():
     day_df = pd.read_csv('day_clean.csv')
     hour_df = pd.read_csv('hour_clean.csv')
